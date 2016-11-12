@@ -43,7 +43,6 @@ export default function query(state=initialState, action) {
 
 
 function findMapBounds(arrayOfBrewsandHotels) {
-  console.log(arrayOfBrewsandHotels)
   let [lats, longs] = arrayOfBrewsandHotels.reduce((result, item) => {
     return [[...result[0], parseFloat(item.latitude)], [...result[1], parseFloat(item.longitude)]]
   }, [lats=[], longs=[]])

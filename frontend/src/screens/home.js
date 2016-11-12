@@ -29,7 +29,7 @@ class Home extends Component{
   }
 
   componentDidMount(){
-    this.props.dispatch(searchByCity('Amsterdam'))
+    this.props.dispatch(searchByCity('New York City'))
   }
   search(data) {
     if(data.length >= 2){this.props.dispatch(searchByCity(data))}
